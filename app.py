@@ -32,7 +32,18 @@ def webhook():
     # print(res)
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
-    return r
+def speech = "Today in "
+
+    #print("Response:")
+    #print(speech)
+
+    return {
+        "speech": speech,
+        "displayText": speech,
+        # "data": data,
+        # "contextOut": [],
+        "source": "apiai-weather-webhook-sample"
+    }
 
 
 def processRequest(req):
